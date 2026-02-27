@@ -1,5 +1,13 @@
 # CyberShield
 
+[![CI/CD](https://github.com/JayeeTee/cybershield/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/JayeeTee/cybershield/actions/workflows/ci.yml)
+[![Security Scan](https://github.com/JayeeTee/cybershield/workflows/Security%20Scan/badge.svg)](https://github.com/JayeeTee/cybershield/actions/workflows/security.yml)
+[![Docker Build](https://github.com/JayeeTee/cybershield/workflows/Docker%20Build/badge.svg)](https://github.com/JayeeTee/cybershield/actions/workflows/docker.yml)
+[![codecov](https://codecov.io/gh/JayeeTee/cybershield/branch/main/graph/badge.svg)](https://codecov.io/gh/JayeeTee/cybershield)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 Unified cybersecurity platform for continuous risk visibility across cloud, code, containers, and network activity.
 
 ## Overview
