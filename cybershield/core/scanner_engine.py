@@ -1,12 +1,18 @@
-"""
-CyberShield - Unified Cybersecurity Platform
-Main entry point for the application
-"""
+"""Core scanner engine abstractions."""
 
-__version__ = "0.1.0"
-__author__ = "CyberShield Team"
+from __future__ import annotations
 
-from cybershield.api.app import create_app
-from cybershield.core.scanner_engine import ScannerEngine
+from dataclasses import dataclass, field
+from datetime import datetime, timezone
+from typing import Any
 
-__all__ = ["create_app", "ScannerEngine"]
+
+@dataclass(slots=True)
+class ScannerEngine:
+    """Minimal scanner orchestrator used by tests and API integrations."""
+
+    created_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
+    metadata: dict[str, Any] = field(default_factory=dict)
+
+    def health(self) -> dict[str, str]:
+        return {"status": "ok"}
