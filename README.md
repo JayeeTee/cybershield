@@ -255,9 +255,36 @@ docker build -t cybershield:latest .
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## Security
+## 🔒 Security
 
-Found a vulnerability? Please email security@example.com instead of opening a public issue.
+### Default Credentials
+
+**⚠️ IMPORTANT:** This repository contains default credentials for **development and testing only**.
+
+- **Admin Login:** `admin` / `cybershield`
+- **Database:** `cybershield` / `password`
+
+**These must be changed before production deployment!** See [SECURITY.md](SECURITY.md) for details.
+
+### Security Best Practices
+
+- ✅ No real API keys or passwords committed to git
+- ✅ `.env` files excluded via `.gitignore`
+- ✅ Test credentials isolated from production configs
+- ✅ Docker configs use environment variables
+- ✅ Pre-commit hooks for secret scanning (recommended)
+
+- ✅ Weekly dependency vulnerability scanning
+
+### Reporting Security Issues
+
+Found a vulnerability? Please email **security@example.com** instead of opening a public issue.
+
+### Security Documentation
+
+- **Full Security Policy:** See [SECURITY.md](SECURITY.md)
+- **Default Credentials:** Change before production!
+- **Production Security Checklist:** See SECURITY.md#security-checklist
 
 ## License
 
